@@ -1,0 +1,47 @@
+section {
+  font-size: 11px;
+  color: #757575;
+}
+
+.portafolio-header {
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+
+.portafolio-info {
+  display: flex;
+  gap: 1px;
+}
+
+.border-botton {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.info {
+  margin:15px;
+}
+
+.color-celeste, 
+strong{
+  color: #2196f3;
+}
+
+.card {
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  width: 300px;
+  box-shadow: 1px 1px 3px 3px #0000001a;
+  padding: 10px 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 100px;
+}
+
+.portafolio-img {
+  width: 60px;
+  margin: 0 auto;
+}
