@@ -45,18 +45,46 @@ const dataPortafolio = [
     parallel: "05",
     classroom: "Lab: 6 JOBS",
     imageUrl: "https://educalinks.tecnologicoargos.edu.ec/altair/assets/img/images/user-m.png"
+  },
+  {
+    id: 6,
+    name: "ORDINARIO VI 2025 LAS AGUAS",
+    subject: "DESARROLLO WEB(COM850)",
+    schedule: "20:30 A 21:45 MARTES Y JUEVES",
+    parallel: "06",
+    classroom: "Lab: 7 JOBS",
+    imageUrl: "https://educalinks.tecnologicoargos.edu.ec/altair/assets/img/images/user-m.png"
+  },
+  {
+    id: 7,
+    name: "ORDINARIO VII 2025 LAS AGUAS",
+    subject: "INTELIGENCIA ARTIFICIAL(COM950)",
+    schedule: "19:30 A 20:45 LUNES Y MIERCOLES",
+    parallel: "07",
+    classroom: "Lab: 8 JOBS",
+    imageUrl: "https://educalinks.tecnologicoargos.edu.ec/altair/assets/img/images/user-m.png"
+  },
+  {
+    id: 8,
+    name: "ORDINARIO VIII 2025 LAS AGUAS",
+    subject: "APLICACIONES MOVILES(COM1050)",
+    schedule: "18:15 A 19:30 MARTES Y JUEVES",
+    parallel: "08",
+    classroom: "Lab: 9 JOBS",
+    imageUrl: "https://educalinks.tecnologicoargos.edu.ec/altair/assets/img/images/user-m.png"
   }
 ]
 export const Portafolio = () => {
   return (
-    <div style={{ display: "flex", minHeight: "100vh" }}>
-      <main style={{ flex: 1, padding: "2rem", display: "flex", gap: "20px"}}>
+    <div className="inicio">
+      <main className="main">
         {dataPortafolio.map((item) => (
           <section key={item.id}>
             <div className="card">
               <div className="portafolio-header border-botton">
                 <div className="portafolio-img">
-                  <img src={item.imageUrl} alt="" />
+                  <img className="img-portafolio"
+                  src={item.imageUrl} alt="" />
                 </div>
                 <h3>{item.name}</h3>
               </div>

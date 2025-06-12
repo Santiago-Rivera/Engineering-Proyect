@@ -4,7 +4,7 @@ section {
 }
 
 .portafolio-header {
-  background-color: #f5f5f5;
+  background-color: white;
   text-align: center;
   margin: 20px 0;
   padding-bottom: 20px;
@@ -29,19 +29,91 @@ strong{
 }
 
 .card {
-  border-radius: 10px;
-  border: 1px solid #dfdfdf;
-  width: 300px;
-  box-shadow: 1px 1px 3px 3px #0000001a;
-  padding: 10px 0;
+  width: 320px;
+  max-width: 90vw;
+  margin: 0.3rem; /* Reducido de 1rem a 0.3rem */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  background: #fff;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
-img {
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+img.img-portafolio {
   width: 100%;
   border-radius: 100px;
+}
+
+.portafolio-img img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .portafolio-img {
   width: 60px;
   margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* Reducido de 1rem a 0.5rem */
+  justify-content: center;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 900px) {
+  .main {
+    gap: 0.3rem; /* Reducido de 1rem a 0.3rem */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 90vw;
+    margin: 0.2rem; /* Reducido de 0.5rem a 0.2rem */
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem; /* Reducido de 0.5rem a 0.2rem */
+  }
+  .card {
+    width: 98vw;
+    margin: 0.1rem 0; /* Reducido de 0.2rem a 0.1rem */
+    padding: 0.5rem;
+  }
+  .portafolio-header {
+    margin: 10px 0;
+    padding-bottom: 10px;
+  }
+  .info {
+    margin: 8px;
+  }
+  .portafolio-img img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Mejoras para pantallas muy pequeñas */
+@media (max-width: 400px) {
+  .card {
+    width: 100vw;
+    border-radius: 0;
+    margin: 0;
+    padding: 0.2rem;
+  }
+  .main {
+    padding: 0;
+  }
 }
